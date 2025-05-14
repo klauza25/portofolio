@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(252, 252, 252, 0.014); /* Fond clair avec faible opacité */
+  backdrop-filter: blur(3px);
+  border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Times New Roman', Times, serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Ajout de styles spécifiques pour le mode sombre */
+:root.dark .navbar {
+  background: rgba(17, 24, 39, 0.3); /* Fond sombre avec opacité pour le mode dark */
+}
+
+.navbar a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #1a202c; /* Couleur par défaut pour le mode clair */
+}
+
+:root.dark .navbar a {
+  color: #f3f4f6; /* Couleur pour le mode sombre */
+}
+
+.navbar a:hover {
+  color: #4299e1; /* Couleur au survol */
+}
+
+@plugin "daisyui";
