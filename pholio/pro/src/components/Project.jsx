@@ -1,27 +1,30 @@
 import { motion } from 'framer-motion';
-
+import md from "../assets/img/md.png";
+import yeko from "../assets/img/yekolab.png";
+import forkid from "../assets/img/forkids.png";
+import bright from "../assets/img/brightline.png";
 const Projects = () => {
   const projects = [
     {
-      title: "ImmoPlus",
-      description: "Plateforme de recherche immobilière développée avec Django. Permet aux utilisateurs de rechercher, filtrer et gérer des annonces immobilières.",
-      image: "https://via.placeholder.com/400x300",
+      title: "MDTECHCONGO",
+      description: "MDTECHCONGO",
+      image: md ,
       technologies: ["Django", "Python", "HTML/CSS", "JavaScript"],
       github: "https://github.com/votre-username/immoplus",
       demo: "https://immoplus-demo.com"
     },
     {
-      title: "Portfolio Personnel",
-      description: "Site web portfolio développé avec React et Tailwind CSS. Présente mes compétences, expériences et projets.",
-      image: "https://via.placeholder.com/400x300",
+      title: "brightline",
+      description: "brightline Service",
+      image: bright,
       technologies: ["React", "Tailwind CSS", "JavaScript"],
       github: "https://github.com/votre-username/portfolio",
       demo: "https://votre-portfolio.com"
     },
     {
-      title: "Application de Gestion de Tâches",
-      description: "Application web permettant de gérer des tâches et des projets avec des fonctionnalités de collaboration.",
-      image: "https://via.placeholder.com/400x300",
+      title: "Yekolab forkids ",
+      description: "Plateforme d'apprentissage robotique ",
+      image: forkid,
       technologies: ["React", "Node.js", "MongoDB"],
       github: "https://github.com/votre-username/task-manager",
       demo: "https://task-manager-demo.com"
@@ -29,19 +32,19 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-transparent transition-colors duration-300">
+    <section id="projects" className="py-20  bg-white dark:bg-transparent transition-colors duration-initial ">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white transition-colors duration-300">
+        <h2 className="text-4xl font-bold text-center mb-12   transition-colors duration-300">
           Mes Projets
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ }}
+              whileInView={{  }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
-              className="bg-white/30 dark:bg-gray-800/30 backdrop-blur-sm rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-white/40 dark:hover:bg-gray-800/40"
+              className="  dark:bg-transparent   rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-gray-400 "
             >
               <div className="relative">
                 <img
@@ -49,13 +52,13 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute inset-0"></div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-2 uppercase  transition-colors duration-300">
                   {project.title}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-4 transition-colors duration-300">
+                <p className=" mb-4 transition-colors duration-300 lowercase">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">

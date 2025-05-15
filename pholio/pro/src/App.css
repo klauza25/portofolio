@@ -7,10 +7,10 @@
   width: 100%;
   z-index: 100;
   background: rgba(252, 252, 252, 0.014); /* Fond clair avec faible opacité */
-  backdrop-filter: blur(3px);
-  border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.068);
   font-family: 'Times New Roman', Times, serif;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 /* Ajout de styles spécifiques pour le mode sombre */
